@@ -10,7 +10,9 @@ interface ProductProps{
 export function Product(props:ProductProps){
     return (
         <div className="container">
-            {props.product.title}
+            <img className="img-m" src={props.product.image} alt={props.product.title}/>
+            <p>{props.product.title}</p>
+            <p><span>{props.product.price}</span></p>
         </div>
     )
 }
